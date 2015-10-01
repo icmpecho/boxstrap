@@ -1,0 +1,7 @@
+---
+- name: ensure postgresql is installed
+  homebrew: >
+    name=postgresql
+    state=latest
+    update_homebrew=yes
+
