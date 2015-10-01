@@ -1,0 +1,6 @@
+---
+- name: ensure development environment is setup
+  hosts: all
+  roles:
+    - vim
+
