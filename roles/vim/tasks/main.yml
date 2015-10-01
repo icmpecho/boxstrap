@@ -8,3 +8,18 @@
     state=latest
     install_options=without-python,with-python3,with-lua
 
+- name: ensure vundle is installed
+  git: >
+    repo=git@github.com:VundleVim/Vundle.vim.git
+    dest=~/.vim/bundle/Vundle.vim
+
+- name: ensure vimrc is copied
+  copy: >
+    src=.vimrc
+    dest=~/.vimrc
+
+- name: ensure ftplugin is copied
+  copy: >
+    src=ftplugin
+    dest=~/.vim
+
