@@ -1,0 +1,18 @@
+---
+- name: ensure python and python3 are installed
+  homebrew: >
+    name={{ item }}
+    update_homebrew=yes
+    state=latest
+  with_items:
+    - python
+    - python3
+
+- name: ensure essential python packages are installed
+  pip: >
+    name={{ item }}
+  with_items:
+    - virtualenv
+    - virtualenvwrapper
+    - django
+
