@@ -5,3 +5,8 @@
     state=latest
     update_homebrew=yes
 
+- name: ensure postgresql is loaded at login
+  file: >
+    dest=~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+    src=/usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist
+    state=link
