@@ -1,0 +1,10 @@
+---
+- name: ensure .ssh exists
+  file: >
+    path=~/.ssh state=directory
+
+- name: ensure ssh config is copied
+  copy: >
+    src=config
+    dest=~/.ssh/config
+

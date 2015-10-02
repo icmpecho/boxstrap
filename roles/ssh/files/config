@@ -1,0 +1,17 @@
+Host *
+  ForwardAgent yes
+  IdentityFile ~/.ssh/id_rsa
+
+Host jumper-dev
+  User ping
+  HostName nat.platform.acommercedev.com
+
+Host inventory-dev
+  User ping
+  HostName dev-inventory-1a-0.acommercedev.platform
+
+Host inventory-dev-proxy
+  User ping
+  HostName dev-inventory-1a-0.acommercedev.platform
+  ProxyCommand ssh ping@jumper-dev nc %h %p
+
