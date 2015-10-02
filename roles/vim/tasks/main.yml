@@ -1,10 +1,8 @@
 ---
-- name: ensure brew is up to date
-  homebrew: update_homebrew=yes
-
 - name: ensure vim is installed with python3 and lua
   homebrew: >
     name=vim
+    update_homebrew=yes
     state=latest
     install_options=with-python3,with-lua
 

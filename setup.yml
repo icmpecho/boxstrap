@@ -2,10 +2,10 @@
 - name: ensure development environment is setup
   hosts: all
   roles:
+    - python
     - vim
     - atom
     - git
-    - python
     - postgres
     - zsh
     - ssh
