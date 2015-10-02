@@ -3,6 +3,7 @@
   hosts: all
   roles:
     - vim
+    - atom
     - python
     - postgres
     - zsh

@@ -1,0 +1,4 @@
+---
+- name: ensure atom dotfiles are deployed
+  file: >
+    src=~/Dropbox/sync/atom/.atom dest=~/.atom state=link
