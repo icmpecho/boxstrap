@@ -6,7 +6,7 @@
   homebrew: >
     name=vim
     state=latest
-    install_options=without-python,with-python3,with-lua
+    install_options=with-python3,with-lua
 
 - name: ensure vundle is installed
   git: >
