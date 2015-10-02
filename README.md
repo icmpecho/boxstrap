@@ -15,6 +15,9 @@ Ansible script used to setup development environment on my mac
     $ brew update
     $ brew install ansible
 
+### Dropbox
+All dotfiles are stored in dropbox. We need to install it and sync everything down first.
+
 ## Synopsis
 
     $ ansible-playbook -i hosts/local setup.yml
