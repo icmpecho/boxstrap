@@ -4,6 +4,7 @@
   roles:
     - vim
     - atom
+    - git
     - python
     - postgres
     - zsh

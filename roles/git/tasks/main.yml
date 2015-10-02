@@ -1,0 +1,6 @@
+---
+- name: ensure git dotfiles are deployed
+  file: src=~/Dropbox/sync/git/{{ item }} dest=~/{{ item }} state=link
+  with_items:
+    - .gitconfig
+    - .gitignore_global
