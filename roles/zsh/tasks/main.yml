@@ -1,0 +1,7 @@
+---
+- name: ensure oh-my-zsh repo exists
+  git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh
+
+- name: ensure zshrc is copied
+  copy: src=.zshrc dest=~/.zshrc
+

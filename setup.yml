@@ -4,4 +4,6 @@
   roles:
     - vim
     - python
+    - postgres
+    - zsh
 
