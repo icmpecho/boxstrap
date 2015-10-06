@@ -3,6 +3,7 @@
   hosts: all
   roles:
     - python
+    - ruby
     - node
     - vim
     - atom

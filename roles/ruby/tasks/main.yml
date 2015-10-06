@@ -1,0 +1,8 @@
+---
+- name: ensure ruby is installed
+  homebrew: >
+    name={{ item }}
+    update_homebrew=yes
+    state=latest
+  with_items:
+    - ruby
