@@ -1,0 +1,9 @@
+---
+- name: ensure rabbitmq is installed
+  homebrew: name=rabbitmq update_homebrew=yes state=latest
+
+- name: ensure rabbitmq is loaded at login
+  file: >
+    dest=~/Library/LaunchAgents/homebrew.mxcl.rabbitmq.plist
+    src=/usr/local/opt/rabbitmq/homebrew.mxcl.rabbitmq.plist
+    state=link

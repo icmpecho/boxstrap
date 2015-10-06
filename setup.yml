@@ -9,5 +9,6 @@
     - atom
     - git
     - postgres
+    - rabbitmq
     - zsh
     - ssh
