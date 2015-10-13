@@ -15,4 +15,5 @@
     - virtualenv
     - virtualenvwrapper
     - django
+    - pep8
 
