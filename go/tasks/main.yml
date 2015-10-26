@@ -6,3 +6,11 @@
     state=latest
   with_items:
     - go
+
+- name: ensure essential packages are installed
+  command: go get -u {{ item }}
+  with_items:
+    - github.com/nsf/gocode
+    - golang.org/x/tools/cmd/goimports
+    - github.com/golang/lint/golint
+    - github.com/rogpeppe/godef
