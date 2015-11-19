@@ -16,4 +16,4 @@
     - virtualenvwrapper
     - django
     - pep8
-
+    - flake8
